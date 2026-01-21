@@ -1,0 +1,124 @@
+REQUIREMENT GATHERING
+Automatic Datesheet Generation System
+
+1. INTRODUCTION
+The Automatic Datesheet Generation System is a campus-level application designed
+to automate the process of preparing examination datesheets. Traditionally,
+datesheets are created manually, which is time-consuming and prone to errors
+such as exam clashes and improper slot allocation. This system aims to simplify
+and automate the process by collecting required academic and examination data
+from the administrator and generating a valid datesheet automatically.
+
+2. PROBLEM STATEMENT
+Manual preparation of exam datesheets often leads to:
+- Overlapping exams for students
+- Inefficient time slot usage
+- Difficulty in handling multiple programs and years
+- Delays in publishing and updating schedules
+
+The system addresses these issues by automating datesheet generation using
+predefined rules and constraints.
+
+3. STAKEHOLDERS
+The main stakeholders involved in the system are:
+- Administrator (Examination Cell)
+- Faculty Members
+- Students
+
+4. USER ROLES IDENTIFIED
+
+4.1 Administrator
+The administrator is responsible for managing and controlling the entire
+datesheet generation process.
+
+4.2 Faculty
+Faculty members are responsible for viewing exam schedules related to their
+subjects.
+
+4.3 Students
+Students are end users who view and download their exam datesheets.
+
+5. FUNCTIONAL REQUIREMENTS IDENTIFIED
+
+FR1: Admin Authentication
+The system should allow only authorized administrators to log in and access
+the datesheet generation module.
+
+FR2: Academic Information Collection
+The system should allow the administrator to enter academic details such as:
+- Programs (B.Tech, M.Tech, etc.)
+- Academic years (1st, 2nd, 3rd, 4th)
+- Semesters
+
+FR3: Subject and Course Information
+The system should collect subject-related information including subject name,
+subject code, and associated program and semester.
+
+FR4: Exam Information Collection
+The system should allow the administrator to enter:
+- Exam type (Mid-term, End-term)
+- Exam duration
+- Available time slots
+- Date range for exams
+
+FR5: Constraint Definition
+The system should allow the administrator to define constraints such as:
+- No overlapping exams for the same year or semester
+- Minimum gap between exams
+- Fixed duration for exams
+
+FR6: Automatic Datesheet Generation
+The system should automatically generate an exam datesheet based on the
+provided academic information and constraints.
+
+FR7: Clash Detection
+The system should detect any exam clashes and resolve them automatically
+before finalizing the datesheet.
+
+FR8: Datesheet Preview
+The system should allow the administrator to preview the generated datesheet
+before approval.
+
+FR9: Datesheet Approval and Publishing
+The system should allow the administrator to approve and publish the final
+datesheet.
+
+FR10: Datesheet Viewing
+The system should allow faculty and students to view the published datesheet
+based on their role and academic details.
+
+6. NON-FUNCTIONAL REQUIREMENTS IDENTIFIED
+
+NFR1: Security
+The system should ensure secure login and role-based access control.
+
+NFR2: Performance
+The system should generate datesheets within an acceptable time limit.
+
+NFR3: Reliability
+The system should ensure that the generated datesheet is consistent and
+clash-free.
+
+NFR4: Usability
+The system should be easy to use and understandable by non-technical users.
+
+NFR5: Scalability
+The system should support multiple programs, years, and semesters.
+
+7. DATA REQUIREMENTS
+The system needs to store the following data:
+- Administrator details
+- Program and academic structure
+- Subjects and courses
+- Exam schedules and time slots
+- Generated datesheets
+
+8. ASSUMPTIONS
+- Each subject has only one exam per academic session.
+- All exams follow predefined time slots.
+- Students belong to a single program and semester.
+
+9. CONCLUSION
+The requirement gathering phase identifies the system users, functional and
+non-functional requirements, constraints, and data needs. These requirements
+form the foundation for system design, ER diagrams, and implementation.
