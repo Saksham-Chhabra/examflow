@@ -9,6 +9,10 @@ The **Examination Datesheet Management System** addresses the complexity of univ
 
 While the system is full-stack, the "brain" of the application resides in the **PostgreSQL** database, utilizing triggers, procedures, and normalized schemas to maintain data consistency.
 
+### System Architecture & Structure
+![Project Structure](assets/images/structure.png)
+*Visual representation of the project folder structure and flow.*
+
 ---
 
 ## 🛠 Tech Stack
@@ -54,6 +58,9 @@ To prevent data redundancy and anomalies, the database was refined to **Third No
 A web-based interface allows:
 * **Admins:** To input data, perform CRUD operations, and trigger datesheet generation.
 * **Students:** To view and download their specific exam schedule by entering their Roll Number.
+
+**Admin Dashboard Preview:**
+![Admin Interface](assets/images/admin.png)
 
 ---
 
